@@ -1,0 +1,22 @@
+{
+  "tests": [
+    {
+      "run": "node --check notebook.ipynb",
+      "name": "Compilation and Syntax Check",
+      "input": "",
+      "setup": "",
+      "output": "",
+      "points": 10,
+      "timeout": 5
+    },
+    {
+      "run": "jupyter nbconvert --to script notebook.ipynb --stdout | python3",
+      "name": "Functional Test",
+      "input": "",
+      "setup": "pip install matplotlib numpy opencv-python-headless",
+      "output": "",
+      "points": 90,
+      "timeout": 10
+    }
+  ]
+}
